@@ -16,9 +16,14 @@ public class DeleteValueArray {
             System.out.print("Enter element " + (i) + ":");
             arr_number[i] = scanner.nextInt();
         }
+        System.out.println("Display arr number");
+        for (int arr:arr_number) {
+            System.out.print(" "+arr);
+        }
+        System.out.println();
         //delete element
         int value;
-        System.out.print("Enter element delete: ");
+        System.out.println("Enter element delete: ");
         value = scanner.nextInt();
         for (int i = 0; i < size; i++) {
             if (value == arr_number[i]) {
