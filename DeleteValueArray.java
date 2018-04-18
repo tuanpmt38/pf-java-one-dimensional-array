@@ -2,37 +2,37 @@ import java.util.Scanner;
 
 public class DeleteValueArray {
     public static void main(String[] args) {
-        int n;// number element
-        int[] num;
+        int size;// number element
+        int[] arr_number;
         Scanner scanner = new Scanner(System.in);
         //enter array
         do {
             System.out.print("Enter size:");
-            n = scanner.nextInt();
-        } while (n <= 0);
+            size = scanner.nextInt();
+        } while (size <= 0);
         //enter element
-        num = new int[n];
-        for (int i = 0; i < n; i++) {
+        arr_number = new int[size];
+        for (int i = 0; i < size; i++) {
             System.out.print("Enter element " + (i) + ":");
-            num[i] = scanner.nextInt();
+            arr_number[i] = scanner.nextInt();
         }
         //delete element
-        int x;
+        int value;
         System.out.print("Enter element delete: ");
-        x = scanner.nextInt();
-        for (int i = 0; i < n; i++) {
-            if (x == num[i]) {
-                for (int j = i; j < n - 1; j++) {
-                    num[j] = num[j+1];
+        value = scanner.nextInt();
+        for (int i = 0; i < size; i++) {
+            if (value == arr_number[i]) {
+                for (int j = i; j < size - 1; j++) {
+                    arr_number[j] = arr_number[j + 1];
 
                 }
-                n--;
+                size--;
             }
         }
         //before element sort
         System.out.print("Sort before delete element: \t");
-        for (int i = 0; i < n; i++) {
-            System.out.print(num[i] + "\t");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr_number[i] + "\t");
         }
     }
 }
