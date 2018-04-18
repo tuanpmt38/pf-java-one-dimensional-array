@@ -37,7 +37,7 @@ public class DeleteValueArray {
         //before element sort
         System.out.print("Sort before delete element: \t");
         for (int i = 0; i < size; i++) {
-            System.out.print(arr_number[i] + "\t");
+            System.out.print(arr_number[i] + "\t ");
         }
     }
 }
